@@ -14,6 +14,8 @@ public class GameManager : MonoBehaviour
     [Header("ゲーム状態フラグ")]
     private bool isGameOver = false;
 
+    public float ClearTime { get; private set; }
+
     private void Awake()
     {
         // シングルトンパターン
@@ -29,6 +31,8 @@ public class GameManager : MonoBehaviour
     }
     public void UpdateTimer()
     {
+        if (isGameOver) return;
+
         RemainingTime -= Time.deltaTime;
         //_timerText.text = Mathf.CeilToInt(_currentTime).ToString();
 
@@ -42,6 +46,8 @@ public class GameManager : MonoBehaviour
     {
         RemainingTime = _timeLimit;
         isGameOver = false;
+        ClearTime = 0f;
+
     }
 
     public void GameOver()
@@ -55,7 +61,8 @@ public class GameManager : MonoBehaviour
     public void StageClear()
     {
         isGameOver = true;
-        Debug.Log("Stage Clear!");
+        ClearTime = _timeLimit - RemainingTime;
+        Debug.Log($"Stage Clear! クリアタイム: {ClearTime:F2} 秒");
         SceneManager.LoadScene("GameCrear");
         // 次のステージへ or リザルト表示など
     }
