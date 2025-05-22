@@ -24,12 +24,12 @@ public class OnTriggerSystem : MonoBehaviour
 
         if (collision.gameObject.tag == "PlayerBlue" && gameObject.tag == "Blue")
         {
-            _boxCollider2d.isTrigger = false;
+            _boxCollider2d.isTrigger = true;
         }
 
         if (collision.gameObject.tag == "PlayerRed" && gameObject.tag == "Blue")
         {
-            _boxCollider2d.isTrigger = true;
+            _boxCollider2d.isTrigger = false;
         }
 
     }

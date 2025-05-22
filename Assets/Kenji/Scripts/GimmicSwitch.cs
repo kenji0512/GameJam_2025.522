@@ -10,7 +10,7 @@ public class GimmicSwitch : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        Gimmic_Ground.SetActive(false); //オブジェクトを非表示
+       
     }
 
     // Update is called once per frame
@@ -21,16 +21,32 @@ public class GimmicSwitch : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D col)
     {
-        if (col.gameObject.name == "Player")
+        if (col.gameObject.tag == "PlayerRed" || col.gameObject.tag == "PlayerBlue")
         {
-            Gimmic_Ground.SetActive(true); //オブジェクトを表示
+            if (Gimmic_Ground.activeSelf)
+            {
+                Gimmic_Ground.SetActive(false);
+            }
+            else
+            {
+                Gimmic_Ground.SetActive(true); //オブジェクトを表示
+            }
+                
         }
     }
     private void OnTriggerExit2D(Collider2D col)
     {
-        if (col.gameObject.name == "Player")
+        if (col.gameObject.tag == "PlayerRed" || col.gameObject.tag == "PlayerBlue")
         {
-            Gimmic_Ground.SetActive(false); //オブジェクトを表示
+            if (Gimmic_Ground.activeSelf)
+            {
+                Gimmic_Ground.SetActive(false);
+            }
+            else
+            {
+                Gimmic_Ground.SetActive(true); //オブジェクトを表示
+            }
+
         }
     }
 }
