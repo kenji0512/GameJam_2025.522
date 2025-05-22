@@ -141,7 +141,6 @@ GameObject:
   m_Component:
   - component: {fileID: 4710651560629555539}
   - component: {fileID: 585258841968033175}
-  - component: {fileID: 6633296029244919043}
   - component: {fileID: 8882466493110522700}
   m_Layer: 0
   m_Name: Cube
@@ -217,19 +216,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &6633296029244919043
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5131173321102885494}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3ef1b24bcd0cb2b49b8bc25df7f451e4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Redstep: {fileID: 4052830892670831248}
 --- !u!61 &8882466493110522700
 BoxCollider2D:
   m_ObjectHideFlags: 0
