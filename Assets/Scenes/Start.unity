@@ -649,7 +649,7 @@ GameObject:
   - component: {fileID: 1672205640}
   - component: {fileID: 1672205639}
   m_Layer: 0
-  m_Name: Gamemanager
+  m_Name: GameManager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -668,6 +668,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _timeLimit: 60
+  RemainingTime: 0
 --- !u!4 &1672205640
 Transform:
   m_ObjectHideFlags: 0
