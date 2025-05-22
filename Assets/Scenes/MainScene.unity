@@ -280,7 +280,7 @@ GameObject:
   - component: {fileID: 45582335}
   - component: {fileID: 45582336}
   m_Layer: 0
-  m_Name: InGameObject
+  m_Name: InGameSystem
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1064,6 +1064,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Canvas
       objectReference: {fileID: 0}
+    - target: {fileID: 3685004108449374320, guid: 61739e621c78e90419693f152cc527c7, type: 3}
+      propertyPath: m_Camera
+      value: 
+      objectReference: {fileID: 519420031}
     - target: {fileID: 7113832213584147233, guid: 61739e621c78e90419693f152cc527c7, type: 3}
       propertyPath: m_Pivot.x
       value: 0
