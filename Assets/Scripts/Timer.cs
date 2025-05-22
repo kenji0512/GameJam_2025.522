@@ -11,14 +11,12 @@ public class Timer : MonoBehaviour
     {
         _gameManager = GameObject.Find("GameManager")?.GetComponent<GameManager>();
         _timerText = GetComponent<Text>();
-        if ( _timerText == null)
-        {
-            Debug.Log("Text‚ªŒ©‚Â‚©‚è‚Ü‚¹‚ñ");
-        }
+       
+        
     }
     private void Update()
     {
-        if ( _timerText != null )
+        if ( _timerText == null )
         {
             return;
         }
@@ -26,5 +24,7 @@ public class Timer : MonoBehaviour
             (int)_gameManager.RemainingTime % 60,
             (int)(_gameManager.RemainingTime * 100) % 60
             );
+
+       
     }
 }
