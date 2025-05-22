@@ -14,22 +14,22 @@ public class OnTriggerSystem : MonoBehaviour
     {
         if (collision.gameObject.tag == "PlayerRed" && gameObject.tag == "Red")
         {
-            _boxCollider2d.enabled = false;
+            _boxCollider2d.isTrigger = true;
         }
 
         if (collision.gameObject.tag == "PlayerBlue" && gameObject.tag == "Red")
         {
-            _boxCollider2d.enabled = true;
+            _boxCollider2d.isTrigger = false;
         }
 
         if (collision.gameObject.tag == "PlayerBlue" && gameObject.tag == "Blue")
         {
-            _boxCollider2d.enabled = true;
+            _boxCollider2d.isTrigger = false;
         }
 
         if (collision.gameObject.tag == "PlayerRed" && gameObject.tag == "Blue")
         {
-            _boxCollider2d.enabled = false;
+            _boxCollider2d.isTrigger = true;
         }
 
     }

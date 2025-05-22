@@ -490,6 +490,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bluewall
       objectReference: {fileID: 0}
+    - target: {fileID: 3027373662053382538, guid: 133ecb0d488196549b5c6c99b88ce1b6, type: 3}
+      propertyPath: m_TagString
+      value: Blue
+      objectReference: {fileID: 0}
     - target: {fileID: 4945236897249039182, guid: 133ecb0d488196549b5c6c99b88ce1b6, type: 3}
       propertyPath: m_LocalPosition.x
       value: 8.02
@@ -529,6 +533,10 @@ PrefabInstance:
     - target: {fileID: 4945236897249039182, guid: 133ecb0d488196549b5c6c99b88ce1b6, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5737833875207594177, guid: 133ecb0d488196549b5c6c99b88ce1b6, type: 3}
+      propertyPath: m_TagString
+      value: Blue
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -665,6 +673,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: Redstep
       objectReference: {fileID: 0}
+    - target: {fileID: 4995227409084052104, guid: ae2f0cda75984284480fa640bc6f9fdd, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 5131173321102885494, guid: ae2f0cda75984284480fa640bc6f9fdd, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 5131173321102885494, guid: ae2f0cda75984284480fa640bc6f9fdd, type: 3}
+      propertyPath: m_TagString
+      value: Red
+      objectReference: {fileID: 0}
     - target: {fileID: 6127618162459804794, guid: ae2f0cda75984284480fa640bc6f9fdd, type: 3}
       propertyPath: m_LocalScale.x
       value: 5
@@ -768,7 +788,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4427652446852247476, guid: a998fe71519477a409e7148aa2641336, type: 3}
       propertyPath: m_IsTrigger
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7012927504916769990, guid: a998fe71519477a409e7148aa2641336, type: 3}
       propertyPath: m_Name
@@ -841,7 +861,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7102948231011289258, guid: 09dd54a6b68d9e8439cfe234674d97d0, type: 3}
       propertyPath: m_IsTrigger
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
