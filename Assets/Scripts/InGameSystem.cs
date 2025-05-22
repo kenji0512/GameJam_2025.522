@@ -9,12 +9,12 @@ public class InGameSystem : MonoBehaviour
     void Start()
     {
         _gameManager = GameObject.Find("GameManager")?.GetComponent<GameManager>();
-        _gameManager.StartGame();
+        _gameManager?.StartGame();
     }
 
     // Update is called once per frame
     void Update()
     {
-        _gameManager.UpdateTimer();
+        _gameManager?.UpdateTimer();
     }
 }
