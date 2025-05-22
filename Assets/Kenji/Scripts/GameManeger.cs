@@ -61,7 +61,7 @@ public class GameManager : MonoBehaviour
     {
         isGameOver = true;
         Debug.Log("Game Over!");
-        // リトライやリザルト画面に遷移など
+        // タイトルシーンに移動
     }
 
     public void StageClear()
