@@ -1,6 +1,6 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
-using UnityEngine.UI;
+//using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
 {
@@ -9,7 +9,7 @@ public class GameManager : MonoBehaviour
     [Header("タイマー設定")]
     public float _timeLimit = 60f;
     private float _currentTime;
-    public Text _timerText; // UI テキスト表示用（UnityEngine.UI）
+    //public Text _timerText; // UI テキスト表示用（UnityEngine.UI）
 
     [Header("ゲーム状態フラグ")]
     private bool isGameOver = false;
@@ -43,7 +43,7 @@ public class GameManager : MonoBehaviour
     private void UpdateTimer()
     {
         _currentTime -= Time.deltaTime;
-        _timerText.text = Mathf.CeilToInt(_currentTime).ToString();
+        //_timerText.text = Mathf.CeilToInt(_currentTime).ToString();
 
         if (_currentTime <= 0)
         {
@@ -62,12 +62,14 @@ public class GameManager : MonoBehaviour
         isGameOver = true;
         Debug.Log("Game Over!");
         // タイトルシーンに移動
+        SceneManager.LoadScene("Start");
     }
 
     public void StageClear()
     {
         isGameOver = true;
         Debug.Log("Stage Clear!");
+        SceneManager.LoadScene("GameCrear");
         // 次のステージへ or リザルト表示など
     }
 }
