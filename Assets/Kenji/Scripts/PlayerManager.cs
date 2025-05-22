@@ -7,7 +7,7 @@ public class PlayerManager : MonoBehaviour
     [SerializeField] private float _moveSpeed = 5f;
 
     [Header("ƒvƒŒƒCƒ„[İ’è")]
-    [SerializeField] private PlayerType _playerType;
+    public PlayerType _playerType;
 
     private Rigidbody2D _rigidbody;
     public Transform interactPoint;

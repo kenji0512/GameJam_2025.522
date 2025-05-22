@@ -2,15 +2,15 @@ using UnityEngine;
 
 public class GoalArea : MonoBehaviour
 {
-    private int playersInGoal = 0;
+    private int _playersInGoal = 0;
 
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.CompareTag("PlayerRed") || other.CompareTag("PlayerBlue"))
         {
-            playersInGoal++;
+            _playersInGoal++;
 
-            if (playersInGoal >= 2)
+            if (_playersInGoal >= 2)
             {
                 GameManager.Instance.StageClear();
             }
@@ -21,7 +21,7 @@ public class GoalArea : MonoBehaviour
     {
         if (other.CompareTag("PlayerRed") || other.CompareTag("PlayerBlue"))
         {
-            playersInGoal--;
+            _playersInGoal--;
         }
     }
 }
