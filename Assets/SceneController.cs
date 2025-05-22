@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;　　　//ボタンを使用するのでUI
+//using UnityEngine.UI;　　　//ボタンを使用するのでUI
 using UnityEngine.SceneManagement;
 
 public class SceneController : MonoBehaviour
