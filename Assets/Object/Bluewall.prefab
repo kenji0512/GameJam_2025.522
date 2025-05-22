@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 9156569570613523021}
   m_Layer: 0
   m_Name: Bluewall
-  m_TagString: Untagged
+  m_TagString: Blue
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -143,9 +143,9 @@ GameObject:
   - component: {fileID: 4302141136890349616}
   - component: {fileID: 5539958417221340715}
   - component: {fileID: 103727280348691263}
-  - component: {fileID: 3569033435043977330}
+  - component: {fileID: 5685732667837016460}
   m_Layer: 0
-  m_Name: Cube
+  m_Name: Trigger
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -263,7 +263,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &3569033435043977330
+--- !u!114 &5685732667837016460
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -272,10 +272,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 3027373662053382538}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1a20b347fb1ab0443a5dc976a6b64184, type: 3}
+  m_Script: {fileID: 11500000, guid: 4a6fa0c1df7f99a47b0786453bbb18ed, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Bluewall: {fileID: 9156569570613523021}
 --- !u!1 &5737833875207594177
 GameObject:
   m_ObjectHideFlags: 0
@@ -287,9 +286,9 @@ GameObject:
   - component: {fileID: 5950255630256137600}
   - component: {fileID: 345424182772001926}
   - component: {fileID: 19919773633786368}
-  - component: {fileID: 7669459850758370446}
+  - component: {fileID: 4866933407205418250}
   m_Layer: 0
-  m_Name: Cube (1)
+  m_Name: Trigger
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -407,7 +406,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &7669459850758370446
+--- !u!114 &4866933407205418250
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -416,7 +415,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 5737833875207594177}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1a20b347fb1ab0443a5dc976a6b64184, type: 3}
+  m_Script: {fileID: 11500000, guid: 4a6fa0c1df7f99a47b0786453bbb18ed, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Bluewall: {fileID: 9156569570613523021}
