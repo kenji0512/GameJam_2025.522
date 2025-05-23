@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class SceneTake : MonoBehaviour
@@ -17,18 +15,5 @@ public class SceneTake : MonoBehaviour
         {
             Destroy(gameObject); // ‚·‚Å‚É‘¶İ‚·‚éê‡‚Ííœid•¡¶¬‚ğ–h‚®j
         }
-    }
-
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 }
