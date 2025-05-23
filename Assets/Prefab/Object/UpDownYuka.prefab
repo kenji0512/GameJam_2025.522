@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 6683987128315302017}
   - component: {fileID: 3699135978481019172}
   - component: {fileID: 2009067370349457285}
+  - component: {fileID: 1339752363302737909}
   m_Layer: 0
   m_Name: UpDownYuka
   m_TagString: Untagged
@@ -130,3 +131,18 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &1339752363302737909
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7017197845958561474}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a22bb12398cee75408822e58874ed9bf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _speed: 1
+  _radius: 1
+  _direction: 0
