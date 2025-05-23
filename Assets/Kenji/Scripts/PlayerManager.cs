@@ -1,4 +1,6 @@
 using UnityEngine;
+using UnityEngine.SceneManagement; // ← シーンのリロードに必要
+
 
 [RequireComponent(typeof(Rigidbody2D))]
 public class PlayerManager : MonoBehaviour
@@ -84,6 +86,15 @@ public class PlayerManager : MonoBehaviour
         {
             Gizmos.color = Color.cyan;
             Gizmos.DrawWireSphere(interactPoint.position, interactRange);
+        }
+    }
+    // ★ 死亡判定（トリガー式）
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.gameObject.CompareTag("DeadZone")) // ←タグ名は必要に応じて変更
+        {
+            Debug.Log("死んだ！");
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex); // 今のシーンを再読み込み
         }
     }
 }

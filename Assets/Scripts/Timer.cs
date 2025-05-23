@@ -21,8 +21,8 @@ public class Timer : MonoBehaviour
             return;
         }
         _timerText.text = string.Format("{0:D2}:{1:D2}",
-            (int)_gameManager.RemainingTime % 60,
-            (int)(_gameManager.RemainingTime * 100) % 60
+            (int)_gameManager._RemainingTime % 60,
+            (int)(_gameManager._RemainingTime * 100) % 60
             );
 
        
