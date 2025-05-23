@@ -18,7 +18,7 @@ public class Timer : MonoBehaviour
     }
     private void Update()
     {
-        if ( _timerText != null )
+        if ( _timerText == null )
         {
             return;
         }
