@@ -148,7 +148,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1690276785617815032, guid: 5d844b1486d7d0a4fa7fb8df60b44c43, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: ButtonClick
+      value: MoveA
       objectReference: {fileID: 0}
     - target: {fileID: 1690276785617815032, guid: 5d844b1486d7d0a4fa7fb8df60b44c43, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
@@ -340,6 +340,17 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 3004945454817762121, guid: 5d844b1486d7d0a4fa7fb8df60b44c43, type: 3}
   m_PrefabInstance: {fileID: 213608149}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &213608151 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1690276785617815032, guid: 5d844b1486d7d0a4fa7fb8df60b44c43, type: 3}
+  m_PrefabInstance: {fileID: 213608149}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &314456190
 GameObject:
   m_ObjectHideFlags: 0
@@ -441,7 +452,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 471397794}
-  - component: {fileID: 471397793}
   - component: {fileID: 471397795}
   m_Layer: 0
   m_Name: SceneController
@@ -450,18 +460,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &471397793
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 471397792}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 96845d4ff173aab4ebea71e2e87f6bd5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!4 &471397794
 Transform:
   m_ObjectHideFlags: 0
@@ -489,6 +487,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9ac69c0e89d6c78498be0da3e6ff9a69, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ChangeScene: {fileID: 0}
+  NextStageScene: 
+  StartScene: {fileID: 0}
+  SceneA: MainScene
+  GameScene: {fileID: 213608151}
+  SceneB: 
+  _loadingUI: {fileID: 0}
+  _slider: {fileID: 0}
 --- !u!1 &1292254315
 GameObject:
   m_ObjectHideFlags: 0
@@ -647,7 +653,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1672205640}
-  - component: {fileID: 1672205639}
+  - component: {fileID: 1672205641}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -655,20 +661,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1672205639
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1672205638}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 29054ca49cdf59f43a3b1f12d2e98796, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _timeLimit: 60
-  RemainingTime: 0
 --- !u!4 &1672205640
 Transform:
   m_ObjectHideFlags: 0
@@ -684,6 +676,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1672205641
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1672205638}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 29054ca49cdf59f43a3b1f12d2e98796, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _timeLimit: 60
+  RemainingTime: 0
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

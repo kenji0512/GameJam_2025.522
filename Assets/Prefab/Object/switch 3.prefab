@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 926351644360200321}
   - component: {fileID: 2147146833036482733}
   m_Layer: 0
-  m_Name: switch 2
+  m_Name: switch 3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -76,7 +76,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Color: {r: 0.87843144, g: 0.20392159, b: 0.20392159, a: 1}
+  m_Color: {r: 0, g: 0.28627452, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 2
@@ -144,5 +144,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _targetTags:
-  - PlayerRed
+  - PlayerBlue
   _Gimmic_Ground: {fileID: 0}
