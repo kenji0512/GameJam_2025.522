@@ -15,6 +15,8 @@ public class GameManager : MonoBehaviour
     private bool isGameOver = false;
 
     public float ClearTime { get; private set; }
+    public float ElapsedTime { get; private set; }
+
 
     private void Awake()
     {
@@ -34,6 +36,8 @@ public class GameManager : MonoBehaviour
         if (isGameOver) return;
 
         RemainingTime -= Time.deltaTime;
+        ElapsedTime += Time.deltaTime;
+
         //_timerText.text = Mathf.CeilToInt(_currentTime).ToString();
 
         if (RemainingTime <= 0)
@@ -47,6 +51,7 @@ public class GameManager : MonoBehaviour
         RemainingTime = _timeLimit;
         isGameOver = false;
         ClearTime = 0f;
+        ElapsedTime = 0f;
 
     }
 
