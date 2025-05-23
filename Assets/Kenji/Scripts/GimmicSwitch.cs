@@ -5,7 +5,7 @@ using UnityEngine;
 public class GimmicSwitch : MonoBehaviour
 {
     [SerializeField]
-    GameObject Gimmic_Ground;
+    GameObject[] Gimmic_Ground;
 
     // Start is called before the first frame update
     void Start()
@@ -23,30 +23,35 @@ public class GimmicSwitch : MonoBehaviour
     {
         if (col.gameObject.tag == "PlayerRed" || col.gameObject.tag == "PlayerBlue")
         {
-            if (Gimmic_Ground.activeSelf)
+            foreach (GameObject go in Gimmic_Ground)
             {
-                Gimmic_Ground.SetActive(false);
+                if (go.activeSelf)
+                {
+                    go.SetActive(false);
+                }
+                else
+                {
+                    go.SetActive(true); //オブジェクトを表示
+                }
             }
-            else
-            {
-                Gimmic_Ground.SetActive(true); //オブジェクトを表示
-            }
-                
+                       
         }
     }
     private void OnTriggerExit2D(Collider2D col)
     {
         if (col.gameObject.tag == "PlayerRed" || col.gameObject.tag == "PlayerBlue")
         {
-            if (Gimmic_Ground.activeSelf)
+            foreach (GameObject go in Gimmic_Ground)
             {
-                Gimmic_Ground.SetActive(false);
+                if (go.activeSelf)
+                {
+                    go.SetActive(false);
+                }
+                else
+                {
+                    go.SetActive(true); //オブジェクトを表示
+                }
             }
-            else
-            {
-                Gimmic_Ground.SetActive(true); //オブジェクトを表示
-            }
-
         }
     }
 }
