@@ -8,11 +8,13 @@ public class GameManager : MonoBehaviour
 
     [Header("タイマー設定")]
     public float _timeLimit = 60f;
-    private float _currentTime;
+    public float RemainingTime;
     //public Text _timerText; // UI テキスト表示用（UnityEngine.UI）
 
     [Header("ゲーム状態フラグ")]
     private bool isGameOver = false;
+
+    public float ClearTime { get; private set; }
 
     private void Awake()
     {
@@ -27,25 +29,14 @@ public class GameManager : MonoBehaviour
             Destroy(gameObject);
         }
     }
-
-    void Start()
-    {
-        StartGame();
-    }
-
-    void Update()
+    public void UpdateTimer()
     {
         if (isGameOver) return;
 
-        UpdateTimer();
-    }
-
-    private void UpdateTimer()
-    {
-        _currentTime -= Time.deltaTime;
+        RemainingTime -= Time.deltaTime;
         //_timerText.text = Mathf.CeilToInt(_currentTime).ToString();
 
-        if (_currentTime <= 0)
+        if (RemainingTime <= 0)
         {
             GameOver();
         }
@@ -53,8 +44,10 @@ public class GameManager : MonoBehaviour
 
     public void StartGame()
     {
-        _currentTime = _timeLimit;
+        RemainingTime = _timeLimit;
         isGameOver = false;
+        ClearTime = 0f;
+
     }
 
     public void GameOver()
@@ -68,7 +61,8 @@ public class GameManager : MonoBehaviour
     public void StageClear()
     {
         isGameOver = true;
-        Debug.Log("Stage Clear!");
+        ClearTime = _timeLimit - RemainingTime;
+        Debug.Log($"Stage Clear! クリアタイム: {ClearTime:F2} 秒");
         SceneManager.LoadScene("GameCrear");
         // 次のステージへ or リザルト表示など
     }
