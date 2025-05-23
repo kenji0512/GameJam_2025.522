@@ -362,7 +362,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 949479749}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1900160775}
+        m_TargetAssemblyTypeName: SceneController, Assembly-CSharp
+        m_MethodName: MoveA
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &949479749
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -710,6 +722,56 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1900160772
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1900160774}
+  - component: {fileID: 1900160775}
+  m_Layer: 0
+  m_Name: SceneController
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1900160774
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1900160772}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1674.3442, y: 255.95581, z: -2.4237792}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1900160775
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1900160772}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9ac69c0e89d6c78498be0da3e6ff9a69, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ChangeScene: {fileID: 0}
+  NextStageScene: 
+  StartScene: {fileID: 949479748}
+  SceneA: Start
+  _loadingUI: {fileID: 0}
+  _slider: {fileID: 0}
 --- !u!1 &1925364050
 GameObject:
   m_ObjectHideFlags: 0
@@ -790,3 +852,4 @@ SceneRoots:
   - {fileID: 1355938371}
   - {fileID: 1406943603}
   - {fileID: 1886397263}
+  - {fileID: 1900160774}
