@@ -10,7 +10,7 @@ public class InGameUI : MonoBehaviour
         if (GameManager.Instance != null)
         {
             float time = GameManager.Instance.ElapsedTime;
-            elapsedTimeText.text = $"経過時間: {time:F2} 秒";
+            elapsedTimeText.text = $"経過時間: {time:F2}";
         }
     }
 }
